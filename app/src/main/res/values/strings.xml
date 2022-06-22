@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Рассвет</string>
+
+    <string name="sun">Солнце</string>
+    <string name="grass">Трава</string>
+    <string name="sky">Небо</string>
+    <string name="flower">Цветы</string>
+    <string name="cloud">Облака</string>
+</resources>

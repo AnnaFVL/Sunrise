@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/sky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sky" />
+
+    <ImageView
+        android:id="@+id/sky_night"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sky_night" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/sun"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/cloud1"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/cloud"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_cloud" />
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="260dp"
+        android:layout_height="210dp"
+        android:contentDescription="@string/cloud"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_cloud" />
+    <ImageView
+        android:id="@+id/grass"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grass" />
+
+    <ImageView
+        android:id="@+id/grass_night"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grass_night" />
+
+    <ImageView
+        android:id="@+id/flower1blue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="110dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower_blue" />
+
+    <ImageView
+        android:id="@+id/flower2blue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="200dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower_blue" />
+
+    <ImageView
+        android:id="@+id/flower3blue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower_blue" />
+
+    <ImageView
+        android:id="@+id/flower1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="110dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower" />
+
+    <ImageView
+        android:id="@+id/flower2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="200dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower" />
+
+    <ImageView
+        android:id="@+id/flower3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/flower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_baseline_flower" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
