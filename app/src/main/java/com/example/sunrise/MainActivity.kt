@@ -16,6 +16,7 @@ import kotlin.concurrent.schedule
 class MainActivity : AppCompatActivity() {
 
     private var grassCount: Int = 0         // счетчик, сколько раз нажали на траву
+    private var sunRandom: Int = 0          // рандом для определения ресурса для кроликов/пчел/травы
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,9 +45,39 @@ class MainActivity : AppCompatActivity() {
             //Toast.makeText(this,"Sky", Toast.LENGTH_LONG).show()
             skyAnimationShow()
         }
+
+        sunImageView.setOnClickListener{
+            //Toast.makeText(this,"Sun", Toast.LENGTH_LONG).show()
+            sunRandom = java.util.Random().nextInt(3)
+            rabbitAnimationShow()
+        }
     }
 
-    fun skyAnimationShow() {
+    private fun rabbitAnimationShow() {
+        val rabbit1: ImageView = findViewById(R.id.rabbit1)
+        val rabbit2: ImageView = findViewById(R.id.rabbit2)
+        val rabbit3: ImageView = findViewById(R.id.rabbit3)
+
+        val rabbitAnimation: Animation = AnimationUtils.loadAnimation(this, R.anim.rabbit_anim)
+
+        when(sunRandom) {
+            0 -> { rabbit1.setImageResource(R.drawable.ic_baseline_rabbit_black)
+            rabbit2.setImageResource(R.drawable.ic_baseline_rabbit_white)
+            rabbit3.setImageResource(R.drawable.ic_baseline_rabbit_grey)}
+            1 -> { rabbit1.setImageResource(R.drawable.ic_baseline_bee)
+                rabbit2.setImageResource(R.drawable.ic_baseline_bee)
+                rabbit3.setImageResource(R.drawable.ic_baseline_bee)}
+            2 -> { rabbit1.setImageResource(R.drawable.ic_baseline_grass)
+                rabbit2.setImageResource(R.drawable.ic_baseline_mouse)
+                rabbit3.setImageResource(R.drawable.ic_baseline_grass)}
+        }
+
+        rabbit1.startAnimation(rabbitAnimation)
+        rabbit2.startAnimation(rabbitAnimation)
+        rabbit3.startAnimation(rabbitAnimation)
+    }
+
+    private fun skyAnimationShow() {
         val cloud1: ImageView = findViewById(R.id.cloud1)
         val cloud2: ImageView = findViewById(R.id.cloud2)
 
@@ -60,7 +91,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun flowerAnimationShow() {
+    private fun flowerAnimationShow() {
 
         val flower1: ImageView = findViewById(R.id.flower1)
         val flower2: ImageView = findViewById(R.id.flower2)
